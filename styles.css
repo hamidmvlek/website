@@ -1,0 +1,62 @@
+body {
+    font-family: "Courier New", monospace;
+    background: url("background.gif") no-repeat center center fixed;
+    background-size: cover; /* Makes sure the GIF covers the whole page */
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.left-column,
+.middle-column {
+    flex: 1;
+    padding: 0px;
+}
+
+.middle-column {
+    left: 100%;
+}
+
+.right-column {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Sends it behind everything */
+    width: auto; /* Keeps original size */
+    height: auto; /* Keeps original size */
+}
+
+h2,
+h3 {
+    font-weight: normal;
+}
+
+.sub {
+    font-size: 14px;
+    color: gray;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-link {
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: blue;
+}
